@@ -104,14 +104,55 @@
 </p>
                     </div>
                     <p>
-                      <h3>Journal Entry #1: </h3>
-                      In Professor Hinson’s ANTH370 course (Descendants project), students are tasked with archivally exploring the lives of lynching victims in in North Carolina., and then to trace their descendants to the present day using Census data, military records, cemetery listings, and more. The ultimate goal is to discover historically erased information about the victims' families, and then to trace those families through time, with the end of locating and interviewing descendants. These family trees would ultimately be shared with the family themselves. Being able to present them with family trees, along with links to attached documents, would be a tiny step towards the kinds of reparations that ALL state institutions owe to communities that have been the historical victims of racial terror.
+                      <h3>Journal Entry #1: First Meeting with Mentor 9/11 </h3>
+                      Week 1: Try to get to working state as quickly as possible. “Toaster example”
+<br>Schedule a meeting with the students within the next 2 weeks.
+<br>Set up UNC CloudApps Instance + Tech stack/infrastructure
+<br>Create 2 nodes. Connect them with each other.
+<br>Think about UI design?
+<br>Top → Bottom
+<br>Right now we are 2 degrees removed from the people using the system. In terms of testing and receiving feedback, we want to interact with the families and students. “Bell curve of aptitude” - bottom: don’t have internet access. Middle: have a phone in hand.
+<br>End: v tech savvy
+<br>We are kind of in the dark right now - but we don’t know for sure. Actual users of the system are going to be key. For example, show me how you get to ancestry.com? Show me how you check your email? Ask very non-biased question to get a better understanding of how tech saavy they are?
+What age group are the family members?
+<br>Useability conversations are important now! Last thing we want to do is end up having 55% of the families not even being able to use the application. Level set the expectations for the users to make our software as accessible as possible
+<br>Try to schedule interaction with families and students
+<br>Maybe we can schedule a visit to the class?
+<br>MAKE INTERFACE AS STRAIGHTFORWARD IS IT CAN BE
+<br>Ask family members 1on1 about how they would like to interact with the family tree?
 
 
-                        <br><br> However, given that most lynching victims were working-class African Americans, records of family lineages is fragmentary at best.  Students who are investigating family lineages have to keep track of a wildly diverse set of disparate documents to piece together these family trees. There is a need for a tool that students can use to easily create visual family trees, as well as store corresponding relevant records and documents in these trees.
 
-                        <br><br>We are working with Professor Hinson to develop a web app that would be used by his students in the ANTH370 course to construct visual family trees, which would then be shared with affected families. Specifically, we will create a system that would allow students to input the documents they’ve found on a particular family and then link these documents to a relational family tree that can be customized and updated. These visualizations must be presentable and easy to follow for another audience, which in our case, would be the members of the descendants’ families.
 
+
+
+
+
+<br>Trying to get schema from relational database to tree can be really hard. Relational database can work well when we want to match against a lot of other data with a database.
+<br>Graph Databases?
+<br>Janus graph?
+<br>Cassandra → Apache Titan
+<br>Gremlin Query Language
+<br>MongoDB is meant to be a time-series.
+
+<br>d3.js could be a good solution
+<br>Ask Families to see if they like the d3 samples?
+
+<br>Application frameworks
+<br>End users don’t care about application framework, just if it works
+<br>Popular: Cloud-native
+<br>Apache Kafka …
+<br>How many people are going to use the software simultaneously?
+
+<br>Tenant-specific data. Each tenant has a specific id so that one system has all the data but all the data is associated with a “tenant”.
+<br>For example: Family tree id?
+
+<br>Record feedback very meticulously
+
+<br>“Playback” - this is what we did since the last time we talked. What do you think? Regular feedback is ideal.
+
+<br>Make design modifications in code in order to be able to showcase that and receive actual feedback.
+<br>https://fperucic.github.io/treant-js/ Investigate it. Be conscious of how far it takes us to use this.
                     </p>
                     <!-- <button type="button" class="btn btn-primary slide">Learn More <i class="fa fa-caret-right"></i></button> -->
                 </div>
